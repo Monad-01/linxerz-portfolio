@@ -1,38 +1,495 @@
-.App {
+/*
+Colors:
+
+Floral White: #FEFCED
+Banana Mania: #FAF2B5
+Safety Yellow: #F0D200
+Mauve: #E2B2FF
+Rich Lavender: #A767FF
+
+/* 
+Before doing anything we want to be able to 
+set a clean slate for our css, so in order to do that
+we need to use the universal selector "*" to select
+every element, and we will be able to set it to default values of 0
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  /*  
+  Removes the paddings and borders for elements that are
+  usually added on to the elements width and height
+  */
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Roboto Slab;
+  font-weight: 400;
+  /* Fun fact, font-weight doesn't change h1 tags */
+
+  font-size: 3rem;
+  line-height: 1.7;
+  /* Determines the space between the lines of text */
+
+  color: black;
+  padding: 3rem;
+  background-image: url("images/T36NKK.jpg");
+  background-size: contain;
+}
+
+.header {
+  height: 95vh;
+  /* We are saying that the webpage should always take 95% of the viewport height at all times */
+
+  background-size: cover;
+  /* No matter what the width of the viewport is, we are trying to set the image within the width of the box */
+
+  background-position: top;
+  /* No matter where the viewport size is, the image will always show the "top" of itself */
+}
+
+/* Maybe add a space of 5vh for just consistency */
+
+.header-text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header-primary-box {
+  color: black;
+  text-transform: uppercase;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.header-primary-text {
+  background-color: #f0d200;
+  text-align: center;
+  display: block;
+  font-weight: 400;
+  font-size: 5rem;
+  letter-spacing: 3rem;
+  -webkit-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 1);
+  box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 1);
+  animation-name: showedUp;
+  animation-duration: 1s;
+}
+
+.header-middle-text {
+  background-color: #f0d200;
+  text-align: center;
+  display: block;
+  font-weight: 400;
+  font-size: 5rem;
+  letter-spacing: 3rem;
+  -webkit-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 1);
+  box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 1);
+  animation-name: showedUp;
+  animation-duration: 1.5s;
+}
+
+.header-bottom-text {
+  background-color: #f0d200;
+  display: block;
+  letter-spacing: 1rem;
+  font-weight: 400;
+  font-size: 3rem;
+  padding-top: 1rem;
+  -webkit-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 1);
+  box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 1);
+  animation-name: showedUp;
+  animation-duration: 2s;
+}
+
+@keyframes bouncingIn {
+  0% {
+    opacity: 0;
+    transform: translateY(5rem);
+  }
+
+  60% {
+    transform: translateY(-7.5rem);
+  }
+
+  80% {
+    transform: translateY(2rem);
+  }
+  100% {
+    opacity: 1;
+    transorm: translateY(0);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes showedUp {
+  0% {
+    opacity: 0;
   }
-  to {
-    transform: rotate(360deg);
+  90% {
+    opacity: 0;
+    transform: translateY(-6rem);
+  }
+  95% {
+    opacity: 0.5;
+    transform: translateY(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 1rem;
+  padding: 1rem 4rem;
+  display: inline-block;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.header-btn {
+  color: #fff;
+  background-color: black;
+  animation-name: showedUp;
+  animation-duration: 2s;
+}
+
+.blank {
+  height: 5vh;
+}
+
+.about {
+  height: 95vh;
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* Splits the grid into 2 equal fractions */
+
+  grid-template-areas: "about-left-column about-right-column";
+  /* Just literally specify which grid-areas you want to display and how you want to display it */
+}
+
+.about-left-column {
+  grid-area: about-left-column;
+}
+
+.about-right-column {
+  grid-area: about-right-column;
+}
+
+.about-img {
+  margin: 0 auto;
+  margin-top: 4rem;
+  background-image: url(images/Yes.png);
+  background-size: cover;
+  background-position: center;
+  height: 30rem;
+  width: 30rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+}
+
+.about-left-column-textbox {
+  margin: 0 auto;
+  margin-top: 2rem;
+  font-weight: 300;
+  font-size: 2.5rem;
+  width: 50rem;
+  font-style: italic;
+  display: block;
+  text-align: center;
+  background-color: #f0d200;
+  -webkit-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 0.75);
+  box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 0.75);
+}
+
+.about-right-column text {
+  margin: 0 auto;
+  font-size: 2.5rem;
+  font-weight: 300;
+  background-color: #f0d200;
+  -webkit-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 0.75);
+  box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 0.75);
+}
+
+.about-right-column-subtext {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 300;
+  background-color: #f0d200;
+  -webkit-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 0.75);
+  box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 0.75);
+}
+
+.about-right-column h1 {
+  text-align: left;
+}
+
+.projects {
+  height: 95vh;
+  /* background-image: linear-gradient(to right, #f0d400b7, #faf2b5b7);
+
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(0% 15%, 100% 0%, 100% 85%, 0% 100%); */
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* Splits the grid into 2 equal fractions */
+
+  grid-template-areas: "project1 project2 project3";
+  /* Just literally specify which grid-areas you want to display and how you want to display it */
+}
+
+.project {
+  margin: 4rem 2rem;
+  -webkit-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 0.75);
+  box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 0.75);
+
+  transition: all 0.3s;
+}
+
+.project:hover {
+  transform: translateY(-0.5rem);
+  -webkit-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 0.75);
+  box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 0.75);
+}
+
+.projects h1 {
+  background-color: #f0d200;
+  text-align: center;
+  clip-path: polygon(0% 15%, 100% 0%, 100% 85%, 0% 100%);
+}
+.project h6 {
+  background-color: #f0d200;
+}
+.project p {
+  font-weight: 200;
+  font-size: 2rem;
+  background-color: #fefced;
+}
+
+.sources-block {
+  background-color: #faf2b5;
+  display: block;
+}
+
+.sources-block h5 {
+  display: inline-block;
+}
+
+.project1 {
+  grid-area: project1;
+}
+
+.thumbnail1 {
+  display: block;
+  background-image: url(images/Yes.png);
+  background-size: cover;
+  background-position: center;
+  height: 13rem;
+  width: 100%;
+}
+
+.project2 {
+  grid-area: project2;
+}
+
+.project3 {
+  grid-area: project3;
+}
+
+.contact-page {
+  height: 95vh;
+  display: block;
+}
+
+.contact-page-textbox {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 20%);
+}
+
+.contact-info {
+  background-color: #f0d200;
+  text-align: center;
+  -webkit-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 1);
+  box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 1);
+}
+
+.contact-page-textbox h1 {
+  color: black;
+  font-weight: 400;
+  font-size: 5rem;
+  letter-spacing: 1rem;
+  background-color: #f0d200;
+  text-align: center;
+  -webkit-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 1);
+  box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 1);
+}
+
+.contact-info p {
+  font-weight: 500;
+  font-size: 4rem;
+}
+
+.github-icon-small {
+  display: inline-block;
+  height: 3rem;
+  width: 3rem;
+  transform: translateY(20%);
+}
+
+.email-icon {
+  height: 5rem;
+  transform: translate(10%, 25%);
+}
+
+.github-icon {
+  display: inline-block;
+  height: 5rem;
+  transform: translateY(20%);
+}
+
+.linkedin-icon {
+  display: inline-block;
+  height: 5rem;
+  transform: translateY(20%);
+}
+
+.youtube-icon {
+  display: inline-block;
+  margin-left: 1.5rem;
+  height: 4rem;
+  width: 4rem;
+  transform: translateY(27%);
+}
+
+/* AHAHAHHAHAAAAAAA THIS LITERALLY SAVES ME SO MUCH HEADACHE FOR
+"responsive design" JUST REFORMAT IDIOT AND MAKE IT LOOK GOOD */
+@media screen and (max-width: 600px) {
+  .header-primary-text {
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 2rem;
+  }
+
+  .header-middle-text {
+    font-size: 2rem;
+  }
+
+  .header-bottom-text {
+    font-size: 1.5rem;
+  }
+
+  .btn:link,
+  .btn:visited {
+    padding: 2rem 1.5rem;
+  }
+
+  .about {
+    height: 150vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Splits the grid into 2 equal fractions */
+
+    grid-template-areas:
+      "about-left-column"
+      "about-right-column";
+    /* Just literally specify which grid-areas you want to display and how you want to display it */
+  }
+
+  .about-img {
+    height: 20rem;
+    width: 20rem;
+  }
+
+  .about-left-column-textbox {
+    width: 25rem;
+    font-size: 1.5rem;
+  }
+
+  .about-right-column-textbox {
+    font-size: 1.5rem;
+  }
+
+  .about-right-column-subtext {
+    font-size: 2rem;
+  }
+
+  .projects h1 {
+    font-size: 4rem;
+  }
+
+  .header {
+    grid-area: "header";
+  }
+
+  .projects {
+    height: 120vh;
+    grid-area: "projects";
+  }
+
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* Splits the grid into 2 equal fractions */
+
+    grid-template-areas:
+      "project1"
+      "project2"
+      "project3";
+    /* Just literally specify which grid-areas you want to display and how you want to display it */
+  }
+
+  .contact-page {
+    height: 130vh;
+    display: block;
+    transform: translateY(120%);
+  }
+
+  .sources-block h5 {
+    font-size: 1.5rem;
+  }
+
+  .contact-page-textbox h1 {
+    font-size: 2.5rem;
+  }
+
+  .contact-info p {
+    font-size: 2.5rem;
+  }
+
+  .contact-info img {
+    height: 3rem;
   }
 }
