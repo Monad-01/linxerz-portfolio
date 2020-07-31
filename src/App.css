@@ -397,11 +397,6 @@ body {
 /* AHAHAHHAHAAAAAAA THIS LITERALLY SAVES ME SO MUCH HEADACHE FOR
 "responsive design" JUST REFORMAT IDIOT AND MAKE IT LOOK GOOD */
 
-@media screen and (max-width: 1700px) {
-  html {
-    font-size: 80.5%;
-  }
-}
 @media screen and (max-width: 600px) {
   .header-primary-text {
     text-align: center;
