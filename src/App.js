@@ -149,6 +149,16 @@ function App() {
                 <img class="email-icon" src={emailImg} /> : Resume
               </p>
             </div>
+            <div class="contact-info">
+              <p>
+                <img class="email-icon" src={emailImg} /> : Resume
+              </p>
+            </div>
+            <div class="contact-info">
+              <p>
+                <img class="email-icon" src={emailImg} /> : Resume
+              </p>
+            </div>
           </div>
         </div>
       </div>
