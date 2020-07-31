@@ -144,6 +144,11 @@ function App() {
                 pruittj1998@gmail.com
               </p>
             </div>
+            <div class="contact-info">
+              <p>
+                <img class="email-icon" src={emailImg} /> : Resume
+              </p>
+            </div>
           </div>
         </div>
       </div>
