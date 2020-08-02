@@ -72,8 +72,8 @@ function App() {
                 A real-time Q/A application where travelers are able to ask any
                 question around the world, and only nearby local users are only
                 able to answer their question
+                <br />
               </p>
-              <br />
               <div class="sources-block">
                 <img class="youtube-icon" src={youtubeImg} />
                 <h5>Youtube Demo</h5>{" "}
