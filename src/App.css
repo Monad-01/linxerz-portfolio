@@ -394,6 +394,11 @@ body {
   transform: translateY(27%);
 }
 
+.contact-info a {
+  text-decoration: none;
+  color: black;
+}
+
 /* AHAHAHHAHAAAAAAA THIS LITERALLY SAVES ME SO MUCH HEADACHE FOR
 "responsive design" JUST REFORMAT IDIOT AND MAKE IT LOOK GOOD */
 
