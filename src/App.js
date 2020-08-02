@@ -84,7 +84,7 @@ function App() {
             </div>
           </div>
           <div class="project project2">
-            <img class="thumbnail1" />
+            <img class="thumbnail2" />
             <div class="project-text">
               <h6>Mars Weather App</h6>
               <p>
@@ -103,7 +103,7 @@ function App() {
             </div>
           </div>
           <div class="project project3">
-            <img class="thumbnail1" />
+            <img class="thumbnail3" />
             <div class="project-text">
               <h6>Curated</h6>
               <p>

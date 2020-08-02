@@ -312,9 +312,27 @@ body {
 
 .thumbnail1 {
   display: block;
-  background-image: url(images/Yes.png);
+  background-image: url(images/good_samaritan_pic.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: top;
+  height: 13rem;
+  width: 100%;
+}
+
+.thumbnail2 {
+  display: block;
+  background-image: url(images/mars.jpg);
+  background-size: cover;
+  background-position: bottom;
+  height: 13rem;
+  width: 100%;
+}
+
+.thumbnail3 {
+  display: block;
+  background-image: url(images/curated.jpg);
+  background-size: cover;
+  background-position: top;
   height: 13rem;
   width: 100%;
 }
