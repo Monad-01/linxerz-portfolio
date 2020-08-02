@@ -84,6 +84,18 @@ body {
   animation-duration: 1s;
 }
 
+.header-primary-text,
+.header-middle-text,
+.header-bottom-text {
+  transition: all 0.3s;
+}
+
+.header-primary-text:hover,
+.header-middle-text:hover,
+.header-bottom-text:hover {
+  transform: translateY(-0.5rem);
+}
+
 .header-middle-text {
   background-color: #f0d200;
   text-align: center;
@@ -418,11 +430,11 @@ body {
   color: black;
 }
 
-.contact-info {
+.contact-page-textbox-main h1 {
   transition: all 0.3s;
 }
 
-.contact-info:hover {
+.contact-page-textbox-main h1:hover {
   transform: translateY(-0.5rem);
 }
 
