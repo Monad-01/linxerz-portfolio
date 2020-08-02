@@ -45,7 +45,7 @@ function App() {
         <div class="about-right-column">
           <div class="about-right-column-textbox">
             <br />
-            <h1>"Hello, World!"</h1>
+            <h1 class="shake-slow">"Hello, World!"</h1>
             <text>My name is Johnathan Pruitt.</text>
             <br />
             <br />
@@ -84,7 +84,7 @@ function App() {
             </div>
           </div>
           <div class="project project2">
-            <img class="thumbnail1" />
+            <img class="thumbnail2" />
             <div class="project-text">
               <h6>Mars Weather App</h6>
               <p>
@@ -103,7 +103,7 @@ function App() {
             </div>
           </div>
           <div class="project project3">
-            <img class="thumbnail1" />
+            <img class="thumbnail3" />
             <div class="project-text">
               <h6>Curated</h6>
               <p>
@@ -128,7 +128,8 @@ function App() {
           <div class="contact-page-textbox-main">
             <h1>Contact Me @:</h1>
             <br />
-            <div class="contact-info">
+
+            <div class="contact-info shake-slow">
               <a href="https://www.github.com/linxerz" target="_blank">
                 <p>
                   <img class="github-icon" src={githubImg} /> Github
@@ -136,7 +137,7 @@ function App() {
               </a>
             </div>
             <br />
-            <div class="contact-info">
+            <div class="contact-info shake-slow">
               <a href="https://www.linkedin.com/in/jakirap" target="_blank">
                 <p>
                   <img class="linkedin-icon" src={linkedInImg} /> LinkedIn
@@ -144,7 +145,7 @@ function App() {
               </a>
             </div>
             <br />
-            <div class="contact-info">
+            <div class="contact-info shake-slow">
               <a
                 href="https://docs.google.com/document/d/1GDa4ikTgYlVHL44rvwgP3OMeQPWDGdXzaJvkba0mdj4/edit?usp=sharing"
                 target="_blank"
@@ -155,7 +156,7 @@ function App() {
               </a>
             </div>
             <br />
-            <div class="contact-info">
+            <div class="contact-info shake-slow">
               <p>
                 <img class="email-icon" src={emailImg} /> :
                 pruittj1998@gmail.com
