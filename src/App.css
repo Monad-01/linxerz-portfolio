@@ -401,6 +401,9 @@ body {
   html {
     font-size: 75%;
   }
+  .project p {
+    font-size: 2.5rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
