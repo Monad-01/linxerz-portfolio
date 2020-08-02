@@ -173,7 +173,9 @@ body {
 
 .btn:hover {
   transform: translateY(-0.3rem);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 1);
+  -webkit-box-shadow: 20px 19px 0px 4px #f0d200;
+  -moz-box-shadow: 20px 19px 0px 4px #f0d200;
+  box-shadow: 20px 19px 0px 4px #f0d200;
 }
 
 .btn:active {
@@ -232,9 +234,9 @@ body {
   display: block;
   text-align: center;
   background-color: #f0d200;
-  -webkit-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 0.75);
-  box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 1);
+  box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 1);
 }
 
 .about-right-column text {
@@ -242,9 +244,9 @@ body {
   font-size: 2.5rem;
   font-weight: 300;
   background-color: #f0d200;
-  -webkit-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 0.75);
-  box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 1);
+  box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 1);
 }
 
 .about-right-column-subtext {
@@ -252,9 +254,9 @@ body {
   text-align: center;
   font-weight: 300;
   background-color: #f0d200;
-  -webkit-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 0.75);
-  box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 1);
+  box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 1);
 }
 
 .about-right-column h1 {
@@ -281,18 +283,18 @@ body {
 
 .project {
   margin: 4rem 2rem;
-  -webkit-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 0.75);
-  box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 1);
+  box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 1);
 
   transition: all 0.3s;
 }
 
 .project:hover {
   transform: translateY(-0.5rem);
-  -webkit-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 0.75);
-  box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 1);
+  box-shadow: 25px 19px 0px 4px rgba(0, 0, 0, 1);
 }
 
 .projects h1 {

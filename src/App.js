@@ -21,7 +21,7 @@ function App() {
             <br />
           </div>
           <a href="#aboutme" class="btn header-btn">
-            Connect
+            Learn More
           </a>
         </div>
       </header>
