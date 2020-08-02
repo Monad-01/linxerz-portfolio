@@ -20,13 +20,13 @@ function App() {
             <span class="header-bottom-text">•Software Developer•</span>
             <br />
           </div>
-          <a href="#" class="btn header-btn">
+          <a href="#aboutme" class="btn header-btn">
             Connect
           </a>
         </div>
       </header>
       <div class="blank"></div>
-      <div class="about">
+      <div id="aboutme" class="about">
         <div class="about-left-column">
           <div class="about-img"></div>
           <div class="about-left-column-textbox">
