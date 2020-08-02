@@ -129,21 +129,30 @@ function App() {
             <h1>Contact Me @:</h1>
             <br />
             <div class="contact-info">
-              <p>
-                <img class="github-icon" src={githubImg} /> Github
-              </p>
+              <a href="https://www.github.com/linxerz" target="_blank">
+                <p>
+                  <img class="github-icon" src={githubImg} /> Github
+                </p>
+              </a>
             </div>
             <br />
             <div class="contact-info">
-              <p>
-                <img class="linkedin-icon" src={linkedInImg} /> LinkedIn
-              </p>
+              <a href="https://www.linkedin.com/in/jakirap" target="_blank">
+                <p>
+                  <img class="linkedin-icon" src={linkedInImg} /> LinkedIn
+                </p>
+              </a>
             </div>
             <br />
             <div class="contact-info">
-              <p>
-                <img class="email-icon" src={documentImg} /> : Resume
-              </p>
+              <a
+                href="https://docs.google.com/document/d/1GDa4ikTgYlVHL44rvwgP3OMeQPWDGdXzaJvkba0mdj4/edit?usp=sharing"
+                target="_blank"
+              >
+                <p>
+                  <img class="email-icon" src={documentImg} /> Resume
+                </p>
+              </a>
             </div>
             <br />
             <div class="contact-info">
