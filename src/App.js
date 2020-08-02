@@ -5,6 +5,7 @@ import githubImg from "./images/GitHub-Mark-64px.png";
 import youtubeImg from "./images/icons8-play-button-50.png";
 import emailImg from "./images/icons8-new-post-100.png";
 import linkedInImg from "./images/icons8-linkedin-96.png";
+import documentImg from "./images/icons8-new-document-90.png";
 
 function App() {
   return (
@@ -141,25 +142,17 @@ function App() {
             <br />
             <div class="contact-info">
               <p>
+                <img class="email-icon" src={documentImg} /> : Resume
+              </p>
+            </div>
+            <br />
+            <div class="contact-info">
+              <p>
                 <img class="email-icon" src={emailImg} /> :
                 pruittj1998@gmail.com
               </p>
             </div>
-            <div class="contact-info">
-              <p>
-                <img class="email-icon" src={emailImg} /> : Resume
-              </p>
-            </div>
-            <div class="contact-info">
-              <p>
-                <img class="email-icon" src={emailImg} /> : Resume
-              </p>
-            </div>
-            <div class="contact-info">
-              <p>
-                <img class="email-icon" src={emailImg} /> : Resume
-              </p>
-            </div>
+            <br />
           </div>
         </div>
       </div>
