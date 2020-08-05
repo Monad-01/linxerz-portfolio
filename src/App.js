@@ -56,7 +56,11 @@ function App() {
             </div>
             <br />
             <div class="about-right-column-subtext">
-              Insert something about langauges here
+              Mostly working with a React/Node.js stack, but also dabble in
+              Python, C++, and Ruby.
+              <br />
+              W/ Experience with: REST, SCRUM, MySQL, SQLite, Sockets, and
+              constantly learning more.
             </div>
           </div>
         </div>
@@ -76,10 +80,14 @@ function App() {
                 <br />
               </p>
               <div class="sources-block">
-                <img class="youtube-icon" src={youtubeImg} />
-                <h5>Youtube Demo</h5>{" "}
-                <img class="github-icon-small" src={githubImg} />{" "}
-                <h5>Github</h5>
+                <a href="https://www.youtube.com/watch?v=Y6qF6vsMC04&feature=youtu.be">
+                  <img class="youtube-icon" src={youtubeImg} />
+                  <h5>Youtube Demo</h5>{" "}
+                </a>
+                <a href="https://github.com/Linxerz/good-samaritan">
+                  <img class="github-icon-small" src={githubImg} />{" "}
+                  <h5>Github</h5>
+                </a>
               </div>
             </div>
           </div>
@@ -95,10 +103,14 @@ function App() {
                 <br />
               </p>
               <div class="sources-block">
-                <img class="youtube-icon" src={youtubeImg} />
-                <h5>Youtube Demo</h5>{" "}
-                <img class="github-icon-small" src={githubImg} />{" "}
-                <h5>Github</h5>
+                <a href="https://youtu.be/Ih81c7z28Oo">
+                  <img class="youtube-icon" src={youtubeImg} />
+                  <h5>Youtube Demo</h5>{" "}
+                </a>
+                <a href="https://github.com/angeloxenakis/mars-weather-app">
+                  <img class="github-icon-small" src={githubImg} />{" "}
+                  <h5>Github</h5>
+                </a>
               </div>
             </div>
           </div>
@@ -113,10 +125,14 @@ function App() {
                 <br />
               </p>
               <div class="sources-block">
-                <img class="youtube-icon" src={youtubeImg} />
-                <h5>Youtube Demo</h5>{" "}
-                <img class="github-icon-small" src={githubImg} />{" "}
-                <h5>Github</h5>
+                <a href="https://youtu.be/FfdnUmnv8Y8">
+                  <img class="youtube-icon" src={youtubeImg} />
+                  <h5>Youtube Demo</h5>{" "}
+                </a>
+                <a href="https://github.com/willfbren/curated-app">
+                  <img class="github-icon-small" src={githubImg} />{" "}
+                  <h5>Github</h5>
+                </a>
               </div>
             </div>
           </div>

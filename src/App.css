@@ -216,7 +216,7 @@ body {
 .about-img {
   margin: 0 auto;
   margin-top: 4rem;
-  background-image: url(images/Yes.png);
+  background-image: url(images/pic.png);
   background-size: cover;
   background-position: center;
   height: 30rem;
@@ -322,6 +322,11 @@ body {
 
 .project1 {
   grid-area: project1;
+}
+
+.project a {
+  text-decoration: none;
+  color: black;
 }
 
 .thumbnail1 {
