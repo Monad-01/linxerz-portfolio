@@ -174,7 +174,7 @@ function App() {
             <br />
             <div class="contact-info shake-slow">
               <p>
-                <img class="email-icon" src={emailImg} /> :
+                <img class="email-icon" src={emailImg} />
                 pruittj1998@gmail.com
               </p>
             </div>
